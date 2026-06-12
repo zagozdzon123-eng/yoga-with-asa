@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta oss i Vällingby | YogaWithAsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">YogaWithAsa</a>
+            <nav>
+                <a href="index.html">Hem</a>
+                <a href="produkt-1.html">Yogakort</a>
+                <a href="produkt-2.html">Workshops</a>
+                <a href="nyhetsbrev.html">Nyhetsbrev</a>
+                <a href="kontakt.html" class="active">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container grid-2">
+                <div>
+                    <h1>Kontakta YogaWithAsa</h1>
+                    <p>Har du frågor om våra hathayogaklasser, priser eller vilken nivå du bör välja? Tveka inte att höra av dig till oss!</p>
+                    
+                    <div class="margin-top">
+                        <h3>Hitta till studion</h3>
+                        <p><strong>Adress:</strong> Vällingbyplan 7, 162 65 Vällingby (Centralt nära tunnelbanan)</p>
+                        <p><strong>E-post:</strong> info@yogawithasa.se</p>
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&w=800&q=80" alt="Yogastudio interiör" class="responsive-img margin-top">
+                </div>
+
+                <div class="form-container">
+                    <h2>Skicka ett meddelande</h2>
+                    <form id="form-kontakt" action="thank-you.html" method="GET">
+                        <div class="form-group">
+                            <label for="contact-name">Namn</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Ditt namn">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">E-postadress</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="namn@domän.se">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Meddelande</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Skriv din fråga här..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="btn-submit-contact">Skicka meddelande</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 YogaWithAsa. Kursmaterial för Analys och effektmätning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogakort & Medlemskap | YogaWithAsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">YogaWithAsa</a>
+            <nav>
+                <a href="index.html">Hem</a>
+                <a href="produkt-1.html" class="active">Yogakort</a>
+                <a href="produkt-2.html">Workshops</a>
+                <a href="nyhetsbrev.html">Nyhetsbrev</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container grid-2">
+                <div>
+                    <h1>Våra Yogakort & Medlemskap</h1>
+                    <p class="lead">Hitta det kort som passar ditt livsmönster bäst. Vi erbjuder flexibla lösningar för både dig som vill yoga sporadiskt och dig som vill yoga flera gånger i veckan.</p>
+                    <ul>
+                        <li><strong>Klippkort 10 gånger:</strong> Giltigt i 6 månader. Perfekt för flexibilitet.</li>
+                        <li><strong>Månadskort (Obegränsat):</strong> För dig som yogar 2+ gånger i veckan.</li>
+                        <li><strong>Prova-på (3 gånger):</strong> För helt nya medlemmar.</li>
+                    </ul>
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Yogautövare i meditation" class="responsive-img margin-top">
+                </div>
+
+                <!-- Formulär för Hubspot/Köp-intresse -->
+                <div class="form-container">
+                    <h2>Anmäl intresse / Boka Yogakort</h2>
+                    <p>Fyll i formuläret nedan för att säkra ditt kort. Vi skickar betalningsinstruktioner via e-post.</p>
+                    
+                    <!-- Detta formulär kan enkelt ersättas med HubSpot embed-kod senare -->
+                    <form id="form-produkt-1" action="thank-you.html" method="GET">
+                        <div class="form-group">
+                            <label for="p1-name">Namn</label>
+                            <input type="text" id="p1-name" name="name" required placeholder="Ditt för- och efternamn">
+                        </div>
+                        <div class="form-group">
+                            <label for="p1-email">E-postadress</label>
+                            <input type="email" id="p1-email" name="email" required placeholder="namn@foretag.se">
+                        </div>
+                        <div class="form-group">
+                            <label for="p1-option">Välj typ av kort</label>
+                            <select id="p1-option" name="kort_typ">
+                                <option value="klippkort">Klippkort 10 gånger - 1500 kr</option>
+                                <option value="manadskort">Månadskort Obegränsat - 750 kr/mån</option>
+                                <option value="provapa">Prova-på 3 gånger - 350 kr</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="btn-submit-p1">Skicka bokningsförfrågan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 YogaWithAsa. Kursmaterial för Analys och effektmätning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

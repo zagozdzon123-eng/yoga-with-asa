@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops & Fördjupning | YogaWithAsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">YogaWithAsa</a>
+            <nav>
+                <a href="index.html">Hem</a>
+                <a href="produkt-1.html">Yogakort</a>
+                <a href="produkt-2.html" class="active">Workshops</a>
+                <a href="nyhetsbrev.html">Nyhetsbrev</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container grid-2">
+                <div>
+                    <h1>Workshops & Helgkurser</h1>
+                    <p class="lead">Ta din yoga till nästa nivå. Våra workshops på helgerna erbjuder ett djupare fokus på både anatomi, andningstekniker (pranayama) och mental avslappning.</p>
+                    <p>Kommande event:</p>
+                    <div class="card margin-bottom">
+                        <h4>Fördjupning i Hathayoga & Anatomi</h4>
+                        <p><strong>Datum:</strong> Lördag 24 oktober, kl. 10:00 - 14:00<br><strong>Pris:</strong> 650 kr</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Yogautrustning" class="responsive-img">
+                </div>
+
+                <!-- Formulär för Workshop-anmälan -->
+                <div class="form-container">
+                    <h2>Boka plats på Workshop</h2>
+                    <p>Antalet platser är begränsat till 15 deltagare per tillfälle för att garantera personlig feedback.</p>
+                    
+                    <form id="form-produkt-2" action="thank-you.html" method="GET">
+                        <div class="form-group">
+                            <label for="p2-name">Namn</label>
+                            <input type="text" id="p2-name" name="name" required placeholder="Ditt för- och efternamn">
+                        </div>
+                        <div class="form-group">
+                            <label for="p2-email">E-postadress</label>
+                            <input type="email" id="p2-email" name="email" required placeholder="din.mejl@domän.se">
+                        </div>
+                        <div class="form-group">
+                            <label for="p2-experience">Erfarenhet av yoga</label>
+                            <select id="p2-experience" name="erfarenhet">
+                                <option value="nyborjare">Nybörjare</option>
+                                <option value="erfaren">Mer erfaren yogi</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="btn-submit-p2">Reservera min plats</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 YogaWithAsa. Kursmaterial för Analys och effektmätning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

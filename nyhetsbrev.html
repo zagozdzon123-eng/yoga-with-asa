@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyhetsbrev | Få tips och schemaändringar | YogaWithAsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">YogaWithAsa</a>
+            <nav>
+                <a href="index.html">Hem</a>
+                <a href="produkt-1.html">Yogakort</a>
+                <a href="produkt-2.html">Workshops</a>
+                <a href="nyhetsbrev.html" class="active">Nyhetsbrev</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container max-width-600 text-center">
+                <h1>Prenumerera på vårt nyhetsbrev</h1>
+                <p>Håll dig uppdaterad om nya klasser, ändringar i schemat och få exklusiva tips för din personliga yogapraktik direkt till din inkorg. Vi skickar ut brev ca 1-2 gånger i månaden.</p>
+                
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Människor som samtalar i en cirkel" class="responsive-img margin-bottom margin-top">
+
+                <!-- Perfekt ställe att klistra in Mailchimps inbäddade formulärkod sen -->
+                <div class="form-container text-left">
+                    <form id="form-nyhetsbrev" action="thank-you.html" method="GET">
+                        <div class="form-group">
+                            <label for="newsletter-email">E-postadress</label>
+                            <input type="email" id="newsletter-email" name="email" required placeholder="exempel@epost.se">
+                        </div>
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="newsletter-gdpr" name="gdpr" required>
+                            <label for="newsletter-gdpr">Jag godkänner att YogaWithAsa sparar min e-postadress.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="btn-submit-newsletter">Börja prenumerera</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 YogaWithAsa. Kursmaterial för Analys och effektmätning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
